@@ -115,6 +115,24 @@ nav li:hover {
     border-top: 2px solid #0065FC;
 }
 
+/****** body ***********/
+.Accroche {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0px;
+
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
