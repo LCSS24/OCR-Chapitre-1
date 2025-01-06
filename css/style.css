@@ -19,6 +19,12 @@ body {
   margin: 0px;
 }
 
+.gap-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -270,26 +276,70 @@ p {
 
 /****** Hebergements ***********/
 .hebergements {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 65%;
+}
+
+.hebergements h2,
+h3 {
+  margin: 0;
+}
+
+.hebergements-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hebergements-cards a {
+  width: 31%;
 }
 
 .carte {
   display: flex;
   flex-direction: column;
-  background-color: red;
-  width: 250px;
+  justify-content: flex-start;
+  background-color: #ffff;
   height: 207px;
-  border-radius: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  gap: 8px;
 }
 
 .carte img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 240px;
+  width: 100%;
   height: 124px;
-  border: 2px solid green;
-  border-radius: 25px 25px 0px 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.carte-contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 64px;
+  background-color: #ffff;
+  padding-left: 10px;
+  gap: 6px;
+}
+
+.carte-titre {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.carte-sous-titre {
+  font-size: 14px;
+}
+
+.euro {
+  font-size: 14px;
 }
 
 /****** Populaires ***********/
@@ -335,6 +385,58 @@ p {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+/******Activités******/
+.activites {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.activites h2 {
+  margin: 0;
+}
+
+.carte-activite-contenu {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 19px;
+}
+
+.activites-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.activites-cards a {
+  width: 24%;
+}
+
+.carte-activite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 439px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.carte-activite img {
+  width: 100%;
+  height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+/******Footer******/
+footer {
+  display: flex;
+  background-color: #f2f2f2;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
