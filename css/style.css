@@ -26,6 +26,8 @@ body {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
@@ -218,7 +220,10 @@ p {
 }
 
 .Filtres h2 {
+  display: flex;
   font-size: 18px;
+  margin: 0;
+  align-items: center;
 }
 
 .Filtres i {
@@ -416,15 +421,16 @@ h3 {
 
 .activites-cards a {
   width: 24%;
+  height: 439px;
 }
 
 .carte-activite {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 439px;
+  justify-content: space-between;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  background-color: #ffff;
 }
 
 .carte-activite img {
@@ -501,9 +507,100 @@ footer li {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .Filtres {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .carte-activite img {
+    height: 200px;
+  }
+
+  .activites-cards a {
+    height: 270px;
+  }
+
+  .carte-activite-contenu {
+    height: 30px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    align-items: center;
+  }
+
+  .Logo {
+    align-items: center;
+    padding: 30px;
+  }
+
+  .main-container {
+    gap: 30px;
+    padding: 0;
+  }
+
+  nav {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  ul li {
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 2px solid #f2f2f2;
+    width: 50%;
+  }
+
+  nav li:hover {
+    color: #0065fc;
+    border-top: 0px;
+    border-bottom: 2px solid #0065fc;
+  }
+
+  .HautPage {
+    padding: 0 20px;
+  }
+
+  .boutons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .Searchbar {
+    justify-content: center;
+  }
+
+  .fa-magnifying-glass {
+    display: flex;
+    color: white;
+  }
+
+  .Rechercher-txt {
+    display: none;
+  }
+
+  .Rechercher {
+    border-radius: 15px 15px;
+    box-shadow: black 4px 4px;
+  }
 }
