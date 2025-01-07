@@ -584,10 +584,18 @@ footer li {
   .boutons {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+    width: 375px;
+    height: 128px;
   }
 
   .Searchbar {
     justify-content: center;
+  }
+
+  .Searchbar input {
+    width: 100%;
   }
 
   .fa-magnifying-glass {
@@ -601,6 +609,37 @@ footer li {
 
   .Rechercher {
     border-radius: 15px 15px;
-    box-shadow: black 4px 4px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .Filtres a {
+    width: 124.5px;
+    padding: 0px 19px;
+    justify-content: flex-start;
+  }
+
+  .Filtres p {
+    font-size: 16px;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .populaires-cards .card {
+    margin-top: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
   }
 }
