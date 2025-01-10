@@ -282,12 +282,12 @@ p {
   display: flex;
   flex-direction: column;
   width: 65%;
+  justify-content: space-evenly;
 }
 
 .hebergements h2,
 h3 {
   margin: 0;
-
 }
 
 .hebergements-cards {
@@ -299,27 +299,26 @@ h3 {
 }
 
 .hebergements-cards a {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 31%;
   height: 197px;
   margin-top: 20px;
-  
 }
 
 .carte {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffff;
-    height: 100%;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  height: 100%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .carte img {
   width: 100%;
-  height: 60%;
+  height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
@@ -412,8 +411,15 @@ h3 {
 }
 
 .carte-rating i {
-    font-size: 0.8rem;
-  }
+  font-size: 0.8rem;
+}
+
+.carte-rating {
+  display: flex;
+  width: 50%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 
 .activites-cards {
   display: flex;
@@ -445,11 +451,12 @@ h3 {
 }
 
 .carte-activite-contenu {
-    display: flex;
-    justify-content: flex-start;
-   margin: 20px 19px;
-    height: 20%;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 15px;
+  height: 59px;
+}
 
 /******Footer******/
 footer {
@@ -530,9 +537,7 @@ footer li {
   .activites-cards a {
     height: 270px;
   }
-
 }
-
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -597,7 +602,6 @@ footer li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 20px;
     width: 100%;
     height: 128px;
   }
@@ -628,6 +632,8 @@ footer li {
     width: 124.5px;
     padding: 0px 19px;
     justify-content: flex-start;
+    flex-basis: 47%;
+    gap: 6px;
   }
 
   .Filtres p {
@@ -676,11 +682,6 @@ footer li {
     width: 100%;
     height: 200px;
     margin-bottom: 50px;
-  }
-
-  .carte-activite-contenu {
-    height: 50%;
-    align-items: center;
   }
 
   .carte-activite img {
