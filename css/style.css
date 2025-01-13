@@ -516,6 +516,10 @@ footer li {
     height: 200px;
   }
 
+  .carte-activite.notre-dame img {
+    object-position: top;
+  }
+
   .carte-activite-contenu h3 {
     font-size: 0.9rem;
   }
