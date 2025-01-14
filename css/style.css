@@ -53,10 +53,7 @@ header {
 /**** Logo *********/
 .Logo {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 50px;
-  padding-left: 0px;
+  align-items: center;
 }
 
 .Logo img {
@@ -68,21 +65,17 @@ header {
 /**** Barre de navigation *********/
 nav {
   display: flex;
-  flex-direction: row;
-  width: 344px;
   height: 50%;
-  padding-left: 50px;
   justify-content: flex-end;
-  align-items: flex-start;
 }
 
 nav ul {
   display: flex;
-  flex-direction: row;
   height: 35px;
   width: 244px;
   gap: 68px;
   padding-left: 0;
+  justify-content: flex-end;
 }
 
 li {
@@ -108,7 +101,6 @@ nav li:hover {
 .HautPage {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -121,8 +113,6 @@ nav li:hover {
 /****** Barre de recherche***********/
 .Searchbar {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .Search {
@@ -578,6 +568,10 @@ footer li {
   }
 
   /******Haut de page mobile******/
+  .gap-page {
+    gap: 0;
+  }
+
   .HautPage {
     padding: 0 20px;
   }
@@ -619,7 +613,7 @@ footer li {
     padding: 0px 19px;
     justify-content: flex-start;
     flex-basis: 47%;
-    gap: 6pxad;
+    gap: 6px;
   }
 
   /******Hebergements et populaires mobile******/
