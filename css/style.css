@@ -695,5 +695,6 @@ footer li {
 
   .footer-container li {
     justify-content: flex-start;
+    width: 100%;
   }
 }
